@@ -21,9 +21,9 @@ const Navbar = () => {
             <Link key={link.name} to={link.to} className="text-gray-300 hover:text-white transition-colors">{link.name}</Link>
           ))}
         </nav>
-        <button className="px-6 py-2 rounded-md font-semibold text-sm bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 transition-opacity">
+        <Link to="/register"><button className="px-6 py-2 rounded-md font-semibold text-sm bg-gradient-to-r from-pink-500 to-purple-600 hover:opacity-90 transition-opacity">
           Join Now
-        </button>
+        </button></Link>
       </div>
     </header>
   );

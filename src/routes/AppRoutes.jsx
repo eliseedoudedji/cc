@@ -11,6 +11,8 @@ import SelectDisciplinePage from '../pages/levels/SelectDisciplinePage';
 import TestInProgressPage from '../pages/levels/TestInProgressPage'
 import PreFlightCheckPage from '../pages/levels/PreFlightCheckPage'
 import ChallengesPage from '../pages/challenges/ChallengesPage'
+import ProposeChallengeIntroPage from '../pages/challenges/ProposeChallengeIntroPage'
+import EvaluateChallengeFormPage from '../pages/challenges/EvaluateChallengeFormPage'
 
 const AppRoutes = () => {
   return (
@@ -24,6 +26,8 @@ const AppRoutes = () => {
       <Route path="/level-test/pre-flight-check/:disciplineId" element={<PreFlightCheckPage />} />
       <Route path="/level-test/test-in-progress/:disciplineId" element={<TestInProgressPage />} />
       <Route path="/challenges" element={<ChallengesPage />} />
+      <Route path="/propose-challenge/intro" element={<ProposeChallengeIntroPage />} />
+      <Route path="/evaluate-challenge/evaluate" element={<EvaluateChallengeFormPage />} />
     </Routes>
   );
 };

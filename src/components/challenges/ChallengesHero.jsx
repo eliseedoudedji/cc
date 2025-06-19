@@ -105,7 +105,7 @@ const ChallengesHero = () => {
           variants={itemVariants} 
           className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6"
         >
-          <Link to="/challenges/discover" className="w-full sm:w-auto">
+          <Link to="" className="w-full sm:w-auto">
             <button className="w-full px-8 py-3.5 rounded-xl font-semibold text-md bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500 text-white hover:shadow-xl hover:shadow-cyan-500/30 transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
               <ListChecks size={20}/> Découvrir les Challenges
             </button>

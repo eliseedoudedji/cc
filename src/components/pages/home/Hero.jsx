@@ -130,9 +130,9 @@ const Hero = () => {
             Start Your Challenge <ArrowRight size={20}/>
           </motion.button>
           </Link>
-          <motion.button className="w-full sm:w-auto px-10 py-4 rounded-lg font-semibold text-lg border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 transition-colors" initial={{opacity:0, scale:0.8}} animate={{opacity:1, scale:1}} transition={{delay: buttonDelay + 0.15}}>
+          <Link to="/challenges"><motion.button className="w-full sm:w-auto px-10 py-4 rounded-lg font-semibold text-lg border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 transition-colors" initial={{opacity:0, scale:0.8}} animate={{opacity:1, scale:1}} transition={{delay: buttonDelay + 0.15}}>
             Discover More
-          </motion.button>
+          </motion.button></Link>
         </div>
 
         <motion.p className="mt-12 text-sm text-gray-500" initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: buttonDelay + 0.5}}>
