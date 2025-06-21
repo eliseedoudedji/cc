@@ -9,8 +9,8 @@ const GradesHero = () => {
 
   // --- URLs des médias (gardez les vôtres ou adaptez si besoin pour le thème) ---
   //const centralVideoUrl = "https://cdn-front.freepik.com/revamp/temp/hero/1905-AnonymousHome1920x1080-compressed.webm"; // La vidéo de Freepik, pour l'exemple
-  const centralVideoUrl = '../../public/videos/un.mp4';
-  const centralVideoPosterUrl = '../../public/videos/poster.jpg'; // Assurez-vous que ce poster existe
+  const centralVideoUrl = '/videos/un.mp4';
+  const centralVideoPosterUrl = '/videos/poster.jpg'; // Assurez-vous que ce poster existe
 
   const imageCardLeftUrl = "https://img.freepik.com/vecteurs-premium/code-programmation-codage-signe-hacker-icone-code-programmation-faite-du-code-binaire-wireframe-main_127544-3400.jpg";
   const imageCardBottomLeftUrl = "https://img.freepik.com/photo-plan-americain-dun-developpepeur-informatique-35-ans-qui-travaille-laptop-dans_343960-112662.jpg";
