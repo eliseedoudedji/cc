@@ -10,7 +10,6 @@ const GradesHero = () => {
   // --- URLs des médias (gardez les vôtres ou adaptez si besoin pour le thème) ---
   //const centralVideoUrl = "https://cdn-front.freepik.com/revamp/temp/hero/1905-AnonymousHome1920x1080-compressed.webm"; // La vidéo de Freepik, pour l'exemple
   const centralVideoUrl = '/videos/un.mp4';
-  const centralVideoPosterUrl = '/videos/poster.jpg'; // Assurez-vous que ce poster existe
 
   const imageCardLeftUrl = "https://img.freepik.com/vecteurs-premium/code-programmation-codage-signe-hacker-icone-code-programmation-faite-du-code-binaire-wireframe-main_127544-3400.jpg";
   const imageCardBottomLeftUrl = "https://img.freepik.com/photo-plan-americain-dun-developpepeur-informatique-35-ans-qui-travaille-laptop-dans_343960-112662.jpg";
@@ -78,9 +77,8 @@ const GradesHero = () => {
                 muted
                 playsInline
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                poster={centralVideoPosterUrl}
               >
-                <source src={centralVideoUrl} type="video/webm" />
+                <source src={centralVideoUrl} type="video/mp4" />
                 Votre navigateur ne supporte pas la vidéo.
               </video>
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-300"></div>
