@@ -76,7 +76,10 @@ const GradesHero = () => {
                 loop
                 muted
                 playsInline
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                disablePictureInPicture
+                disableRemotePlayback
+                controls={false}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 pointer-events-none"
               >
                 <source src={centralVideoUrl} type="video/mp4" />
                 Votre navigateur ne supporte pas la vidéo.
@@ -107,7 +110,16 @@ const GradesHero = () => {
 
           <div className="hidden md:block absolute top-[42%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[750px] h-[420px] rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 cursor-pointer group z-30 bg-black border-2 border-pink-500/30">
             <div className="relative w-full h-full">
-              <video autoPlay loop muted playsInline className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                disablePictureInPicture
+                disableRemotePlayback
+                controls={false}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 pointer-events-none"
+              >
                 <source src={centralVideoUrl} type="video/mp4" />
                 Votre navigateur ne supporte pas la vidéo.
               </video>
