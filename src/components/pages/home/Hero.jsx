@@ -58,7 +58,7 @@ const Hero = () => {
   const backgroundImageUrl = "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
   // Mots pour l'animation "machine à écrire"
-  const dynamicWords = ["AGAIN.", "NOW.", "WITH YOU."];
+  const dynamicWords = ["ENCORE.", "MAINTENANT.", "AVECNOUS."];
   // Ajustez les vitesses ici si besoin :
   // useTypewriter(mots, vitesseFrappe, vitesseEffacement, pauseApresEcriture, pauseApresEffacement)
   const typedText = useTypewriter(dynamicWords, 120, 70, 2500, 600);
@@ -92,7 +92,7 @@ const Hero = () => {
             CHALLENGE
           </motion.span>
           <motion.span className="block" variants={introVariants} custom={1}>
-            THE FUTURE.
+            TON FUTURE
           </motion.span>
           
           {/* --- PARTIE DYNAMIQUE DU TITRE "MACHINE À ÉCRIRE" --- */}
@@ -121,22 +121,22 @@ const Hero = () => {
         </motion.h1>
         
         <motion.p className="mt-6 max-w-2xl mx-auto text-lg text-gray-300" variants={introVariants} initial="hidden" animate="visible" custom={2}>
-          Unleash your potential. Connect with innovators. Conquer new horizons. The next evolution of collaborative creation starts here.
+          Débloque ta potentielle. Connecte-toi avec les innovateurs. Conquère de nouveaux horizons. La prochaine évolution de la création collaborative commence ici.
         </motion.p>
 
         <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
           <Link to="/login">
           <motion.button className="w-full sm:w-auto px-10 py-4 rounded-lg font-semibold text-lg bg-gradient-to-r from-pink-500 to-purple-600 hover:scale-105 transform transition-transform duration-300 flex items-center justify-center gap-2" initial={{opacity:0, scale:0.8}} animate={{opacity:1, scale:1}} transition={{delay: buttonDelay}}>
-            Start Your Challenge <ArrowRight size={20}/>
+            Commence ton challenge <ArrowRight size={20}/>
           </motion.button>
           </Link>
-          <Link to="/challenges"><motion.button className="w-full sm:w-auto px-10 py-4 rounded-lg font-semibold text-lg border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 transition-colors" initial={{opacity:0, scale:0.8}} animate={{opacity:1, scale:1}} transition={{delay: buttonDelay + 0.15}}>
-            Discover More
+          <Link to="/grades"><motion.button className="w-full sm:w-auto px-10 py-4 rounded-lg font-semibold text-lg border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 transition-colors" initial={{opacity:0, scale:0.8}} animate={{opacity:1, scale:1}} transition={{delay: buttonDelay + 0.15}}>
+            Decouvre plus
           </motion.button></Link>
         </div>
 
         <motion.p className="mt-12 text-sm text-gray-500" initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: buttonDelay + 0.5}}>
-          Trusted by innovators and pioneers worldwide.
+          Confiant parmi les innovateurs et les pionniers du monde entier.
         </motion.p>
       </div>
     </div>

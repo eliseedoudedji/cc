@@ -1,6 +1,6 @@
 // src/pages/propose-challenge/ProposeChallengeIntroPage.jsx
 import React from 'react';
-import ProposeChallengeNavbar from '../../components/challenges/ProposeChallengeNavbar';
+import Navbar from '../../components/pages/home/Navbar';
 import ProposeChallengeHero from '../../components/challenges/ProposeChallengeHero';
 import ExistingChallengesTeaser from '../../components/challenges/ExistingChallengesTeaser';
 import ContactUsTeaser from '../../components/challenges/ContactUsTeaser';
@@ -15,7 +15,7 @@ const ProposeChallengeIntroPage = () => {
       className="bg-[#0D0518] text-gray-100 overflow-x-hidden"
       style={{ fontFamily: "'Inter', sans-serif" }}
     >
-      <ProposeChallengeNavbar />
+      <Navbar />
       <main style={{ paddingTop: navbarHeight }}>
         <ProposeChallengeHero />
         <ExistingChallengesTeaser />

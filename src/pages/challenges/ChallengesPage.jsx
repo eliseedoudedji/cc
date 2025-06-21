@@ -1,6 +1,6 @@
 // src/pages/challenges/ChallengesPage.jsx
 import React from 'react';
-import NavbarChallenges from '../../components/levels/LevelTestNavbar'; // Ou la navbar de votre choix
+import Navbar from '../../components/pages/home/Navbar'; // Ou la navbar de votre choix
 import ChallengesHero from '../../components/challenges/ChallengesHero';
 import Footer from '../../components/pages/home/Footer'; // Assurez-vous du chemin
 import FeaturedChallenges from '../../components/challenges/FeaturedChallenges';
@@ -12,7 +12,7 @@ const ChallengesPage = () => {
       className="bg-[#0D0518] text-gray-100 overflow-x-hidden"
       style={{ fontFamily: "'Inter', sans-serif" }}
     >
-      <NavbarChallenges />
+      <Navbar />
       <main>
         <ChallengesHero />
         <FeaturedChallenges />

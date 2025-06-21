@@ -13,6 +13,10 @@ import PreFlightCheckPage from '../pages/levels/PreFlightCheckPage'
 import ChallengesPage from '../pages/challenges/ChallengesPage'
 import ProposeChallengeIntroPage from '../pages/challenges/ProposeChallengeIntroPage'
 import EvaluateChallengeFormPage from '../pages/challenges/EvaluateChallengeFormPage'
+import SubmittingChallengePage from '../pages/challenges/SubmittingChallengePage'
+import SubmissionSuccessPage from '../pages/challenges/SubmissionSuccessPage'
+import GradesAndCardsPage from '../pages/gradesAndChallenges/GradesAndCardsPage'
+
 
 const AppRoutes = () => {
   return (
@@ -28,6 +32,9 @@ const AppRoutes = () => {
       <Route path="/challenges" element={<ChallengesPage />} />
       <Route path="/propose-challenge/intro" element={<ProposeChallengeIntroPage />} />
       <Route path="/evaluate-challenge/evaluate" element={<EvaluateChallengeFormPage />} />
+      <Route path="/submitting-challenge" element={<SubmittingChallengePage />} />
+      <Route path="/propose-challenge/success" element={<SubmissionSuccessPage />} />
+      <Route path="/grades" element={<GradesAndCardsPage />} />
     </Routes>
   );
 };

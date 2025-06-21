@@ -168,6 +168,7 @@ const EvaluateChallengeFormPage = () => {
             </motion.fieldset>
 
             <motion.div variants={itemVariants} className="flex justify-end pt-4">
+              <Link to='/submitting-challenge'>
               <button 
                 type="submit"
                 className="px-10 py-3.5 rounded-xl font-semibold text-md bg-gradient-to-r from-pink-500 via-purple-600 to-cyan-500 text-white 
@@ -176,6 +177,7 @@ const EvaluateChallengeFormPage = () => {
               >
                 Soumettre pour Évaluation <ArrowRight size={20}/>
               </button>
+              </Link>
             </motion.div>
           </motion.form>
         </div>
